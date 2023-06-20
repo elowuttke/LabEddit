@@ -1,32 +1,37 @@
-import { TokenPayload, USER_ROLES } from "../../../src/models/User"
+import { TokenPayload, USER_ROLES } from "../../src/models/User"
 
 export class TokenManagerMock {
-    public createToken = (payload: TokenPayload): string | null => {
+    public createToken = (payload: TokenPayload): string => {
         if (payload.id === "id-mock") {
             return "token-mock"
+
         } else if (payload.id === "id-mock-lau") {
             // login de lau (conta ADMIN)
             return "token-mock-lau"
+
         } else if (payload.id === "id-mock-yuzo") {
             // login de yuzo (conta USER)
             return "token-mock-yuzo"
+
         } else if (payload.id === "id-mock-vini") {
             // login de vini (conta USER)
             return "token-mock-vini"
+
         } else if (payload.id === "id-mock-gabi") {
             // login de gabi (conta USER)
             return "token-mock-gabi"
+
         } else if (payload.id === "id-mock-clara") {
             // login de clara (conta USER)
             return "token-mock-clara"
+
         } else if (payload.id === "id-mock-luiz") {
             // login de luiz (conta USER)
             return "token-mock-luiz"
-        } else if (payload.id === "id-mock-jessica") {
+
+        } else {
             // login de jessica (conta USER)
             return "token-mock-jessica"
-        } else {
-            return null
         }
     }
 

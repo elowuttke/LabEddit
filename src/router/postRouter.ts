@@ -19,7 +19,7 @@ const postController = new PostController(
 postRouter.post("/", postController.createPost)
 
 // Read
-postRouter.get("/", postController.getPosts)
+postRouter.get("/", postController.getPosts)    
 
 // Update
 postRouter.put("/:id", postController.editPost)

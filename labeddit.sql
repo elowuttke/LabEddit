@@ -99,9 +99,10 @@ INSERT INTO
 INSERT INTO
     comments (id, creator_id, post_id, content)
     VALUES
-    ("c001", "u006", "p001", "O processo do aprendizado é como montar um quebra-cabeça, dá um nervoso de ver ele incompleto, ansiedade enquanto aida não está pronto, e uma alegria imensa quando tudo se encaixa e você pode olhar para o todo, sabendo do esforço que foi necessário para cada peça."),("c002", "u002", "p003", "Eu devoro bugs no café da manhã!"),
+    ("c001", "u006", "p001", "O processo do aprendizado é como montar um quebra-cabeça, dá um nervoso de ver ele incompleto, ansiedade enquanto aida não está pronto, e uma alegria imensa quando tudo se encaixa e você pode olhar para o todo, sabendo do esforço que foi necessário para cada peça."),
+    ("c002", "u002", "p003", "Eu devoro bugs no café da manhã!"),
     ("c003", "u001", "p002", "Difícil não se decepcionar com os nãos assim que eles chegam. Porém é lindo rever daqui a 5 ou 10 anos toda a jornada e perceber quanto crescimento houve, quanta evolução pessoal e profissional, especialmente nesses momentos do não, enquanto aguardava o sim."),
-    ("c004", "u003", "p004", "Dissem por aí que Yuzo é o Astrodev, porque os dois nunca foram vistos juntos ao mesmo tempo. Confirma aí Yuzo, você é o Astrodev?"),
+    ("c004", "u003", "p004", "Dizem por aí que Yuzo é o Astrodev, porque os dois nunca foram vistos juntos ao mesmo tempo. Confirma aí Yuzo, você é o Astrodev?"),
     ("c005", "u004", "p002", "Amiga, estou aqui!  Amiga, estou aqui!  Se a fase é ruim  E são tantos problemas que não tem fim  Não se esqueça que ouviu de mim  Amiga, estou aqui!  Amiga, estou aqui!");
 
 INSERT INTO
@@ -125,13 +126,43 @@ INSERT INTO
     ("u005", "c004", false);
 
 
---UPDATE posts
---SET upvotes = 2, downvotes = 1, comments = 1
---WHERE id = "p001"
+UPDATE posts
+    SET upvotes = 2, comments = 1
+    WHERE id = "p001";
 
---UPDATE comments
---SET upvotes = 2, downvotes = 1
---WHERE id = "c001"
+UPDATE posts
+    SET upvotes = 1, comments = 2
+    WHERE id = "p002";
+
+UPDATE posts
+    SET downvotes = 2, comments = 1
+    WHERE id = "p003";
+
+UPDATE posts
+    SET downvotes = 1, comments = 1
+    WHERE id = "p004";
+
+
+
+UPDATE comments
+    SET upvotes = 1
+    WHERE id = "c001";
+
+UPDATE comments
+    SET downvotes = 1
+    WHERE id = "c002";
+
+UPDATE comments
+    SET upvotes = 2
+    WHERE id = "c003";
+
+UPDATE comments
+    SET downvotes = 1
+    WHERE id = "c004";
+
+UPDATE comments
+    SET downvotes = 1
+    WHERE id = "c005";
 
 
 SELECT * FROM users;

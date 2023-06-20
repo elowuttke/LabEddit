@@ -92,7 +92,7 @@ export class PostDatabase extends BaseDatabase {
                     `${UserDatabase.TABLE_USERS}.id`
                 )
                 .where("content", "LIKE", `%${q}%`)
-                .orWhere("creator_nickname", "LIKE", `%${q}%`)
+                //.orWhere("creator_nickname", "LIKE", `%${q}%`)
             postsDBWithCreatorNickame = result
         } else {
             const result: PostDBWithCreatorNickname[] = await BaseDatabase
