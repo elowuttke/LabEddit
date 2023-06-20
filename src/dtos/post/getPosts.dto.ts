@@ -3,7 +3,7 @@ import { PostModel } from "../../models/Post"
 
 export interface GetPostsInputDTO {
     token: string,
-    q?: string
+    q: string
 }
 
 export type GetPostsOutputDTO = PostModel[]

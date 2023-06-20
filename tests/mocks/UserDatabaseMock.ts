@@ -6,7 +6,7 @@ const usersMock: UserDB[] = [
         id: "id-mock-lau",
         nickname: "Lau",
         email: "lau@dominio.com",
-        password: "lau123",
+        password: "hash-mock-lau",           // senha = "lau123"
         role: USER_ROLES.ADMIN,
         created_at: new Date().toLocaleString()
     },
@@ -14,7 +14,7 @@ const usersMock: UserDB[] = [
         id: "id-mock-yuzo",
         nickname: "Yuzo",
         email: "yuzo@dominio.com",
-        password: "yuzo123",
+        password: "hash-mock-yuzo",    // senha = "yuzo123"
         role: USER_ROLES.USER,
         created_at: new Date().toLocaleString()
     },
@@ -22,7 +22,7 @@ const usersMock: UserDB[] = [
         id: "id-mock-vini",
         nickname: "Vini",
         email: "vini@dominio.com",
-        password: "vini123",
+        password: "hash-mock-vini",    // senha = "vini123"
         role: USER_ROLES.USER,
         created_at: new Date().toLocaleString()
     },
@@ -30,7 +30,7 @@ const usersMock: UserDB[] = [
         id: "id-mock-gabi",
         nickname: "Gabi",
         email: "gabi@dominio.com",
-        password: "gabi123",
+        password: "hash-mock-gabi",    // senha = "gabi123"
         role: USER_ROLES.USER,
         created_at: new Date().toLocaleString()
     },
@@ -38,7 +38,7 @@ const usersMock: UserDB[] = [
         id: "id-mock-clara",
         nickname: "Clara",
         email: "clara@dominio.com",
-        password: "clara123",
+        password: "hash-mock-clara",   // senha = "clara123"
         role: USER_ROLES.USER,
         created_at: new Date().toLocaleString()
     },
@@ -46,7 +46,7 @@ const usersMock: UserDB[] = [
         id: "id-mock-luiz",
         nickname: "Luiz",
         email: "luiz@dominio.com",
-        password: "luiz123",
+        password: "hash-mock-luiz",    // senha = "luiz123"
         role: USER_ROLES.USER,
         created_at: new Date().toLocaleString()
     },
@@ -54,10 +54,10 @@ const usersMock: UserDB[] = [
         id: "id-mock-jessica",
         nickname: "Jessica",
         email: "jessica@dominio.com",
-        password: "jessica123",
+        password: "hash-mock-jessica", // senha = "jessica123"
         role: USER_ROLES.USER,
         created_at: new Date().toLocaleString()
-    },
+    }
 ]
 
 export class UserDatabaseMock extends BaseDatabase {

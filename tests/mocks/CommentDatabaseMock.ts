@@ -3,45 +3,45 @@ import { BaseDatabase } from "../../src/database/BaseDatabase";
 
 const commentsMock: CommentDB[] = [
     {
-        id: "c001",
-        creator_id: "u006",
-        post_id: "p001",
+        id: "id-mock-c1",
+        creator_id: "id-mock-luiz",
+        post_id: "id-mock-p1",
         content: "O processo do aprendizado é como montar um quebra-cabeça, dá um nervoso de ver ele incompleto, ansiedade enquanto aida não está pronto, e uma alegria imensa quando tudo se encaixa e você pode olhar para o todo, sabendo do esforço que foi necessário em cada peça.",
         upvotes: 10,
         downvotes: 5,
         created_at: new Date().toLocaleString(),
         updated_at: new Date().toLocaleString()
     }, {
-        id: "c002",
-        creator_id: "u002",
-        post_id: "p003",
+        id: "id-mock-c2",
+        creator_id: "id-mock-yuzo",
+        post_id: "id-mock-p3",
         content: "Eu devoro bugs no café da manhã!",
         upvotes: 10,
         downvotes: 5,
         created_at: new Date().toLocaleString(),
         updated_at: new Date().toLocaleString()
     }, {
-        id: "c003",
-        creator_id: "u001",
-        post_id: "p002",
+        id: "id-mock-c3",
+        creator_id: "id-mock-lau",
+        post_id: "id-mock-p2",
         content: "Difícil não se decepcionar com os nãos assim que eles chegam. Porém é lindo rever daqui a 5 ou 10 anos toda a jornada e perceber quanto crescimento houve, quanta evolução pessoal e profissional, especialmente nesses momentos do não, enquanto aguardava o sim.",
         upvotes: 10,
         downvotes: 5,
         created_at: new Date().toLocaleString(),
         updated_at: new Date().toLocaleString()
     }, {
-        id: "c004",
-        creator_id: "u003",
-        post_id: "p004",
+        id: "id-mock-c4",
+        creator_id: "id-mock-vini",
+        post_id: "id-mock-p4",
         content: "Dissem por aí que Yuzo é o Astrodev, porque os dois nunca foram vistos juntos ao mesmo tempo. Confirma aí Yuzo, você é o Astrodev?",
         upvotes: 10,
         downvotes: 5,
         created_at: new Date().toLocaleString(),
         updated_at: new Date().toLocaleString()
     }, {
-        id: "c005",
-        creator_id: "u004",
-        post_id: "p002",
+        id: "id-mock-c5",
+        creator_id: "id-mock-gabi",
+        post_id: "id-mock-p4",
         content: "Amiga, estou aqui!  Amiga, estou aqui!  Se a fase é ruim  E são tantos problemas que não tem fim  Não se esqueça que ouviu de mim  Amiga, estou aqui!  Amiga, estou aqui!",
         upvotes: 10,
         downvotes: 5,
@@ -52,9 +52,9 @@ const commentsMock: CommentDB[] = [
 
 const commentsWithCreatorNicknameMock: CommentDBWithCreatorNickname[] = [
     {
-        id: "c001",
-        creator_id: "u006",
-        post_id: "p001",
+        id: "id-mock-c1",
+        creator_id: "id-mock-luiz",
+        post_id: "id-mock-p1",
         content: "O processo do aprendizado é como montar um quebra-cabeça, dá um nervoso de ver ele incompleto, ansiedade enquanto aida não está pronto, e uma alegria imensa quando tudo se encaixa e você pode olhar para o todo, sabendo do esforço que foi necessário em cada peça.",
         upvotes: 10,
         downvotes: 5,
@@ -62,9 +62,9 @@ const commentsWithCreatorNicknameMock: CommentDBWithCreatorNickname[] = [
         updated_at: new Date().toLocaleString(),
         creator_nickname: "Luiz"
     }, {
-        id: "c002",
-        creator_id: "u002",
-        post_id: "p003",
+        id: "id-mock-c2",
+        creator_id: "id-mock-yuzo",
+        post_id: "id-mock-p3",
         content: "Eu devoro bugs no café da manhã!",
         upvotes: 10,
         downvotes: 5,
@@ -72,9 +72,9 @@ const commentsWithCreatorNicknameMock: CommentDBWithCreatorNickname[] = [
         updated_at: new Date().toLocaleString(),
         creator_nickname: "Yuzo"
     }, {
-        id: "c003",
-        creator_id: "u001",
-        post_id: "p002",
+        id: "id-mock-c3",
+        creator_id: "id-mock-lau",
+        post_id: "id-mock-p2",
         content: "Difícil não se decepcionar com os nãos assim que eles chegam. Porém é lindo rever daqui a 5 ou 10 anos toda a jornada e perceber quanto crescimento houve, quanta evolução pessoal e profissional, especialmente nesses momentos do não, enquanto aguardava o sim.",
         upvotes: 10,
         downvotes: 5,
@@ -82,9 +82,9 @@ const commentsWithCreatorNicknameMock: CommentDBWithCreatorNickname[] = [
         updated_at: new Date().toLocaleString(),
         creator_nickname: "Lau"
     }, {
-        id: "c004",
-        creator_id: "u003",
-        post_id: "p004",
+        id: "id-mock-c4",
+        creator_id: "id-mock-vini",
+        post_id: "id-mock-p4",
         content: "Dissem por aí que Yuzo é o Astrodev, porque os dois nunca foram vistos juntos ao mesmo tempo. Confirma aí Yuzo, você é o Astrodev?",
         upvotes: 10,
         downvotes: 5,
@@ -92,9 +92,9 @@ const commentsWithCreatorNicknameMock: CommentDBWithCreatorNickname[] = [
         updated_at: new Date().toLocaleString(),
         creator_nickname: "Vini"
     }, {
-        id: "c005",
-        creator_id: "u004",
-        post_id: "p004",
+        id: "id-mock-c5",
+        creator_id: "id-mock-gabi",
+        post_id: "id-mock-p4",
         content: "Amiga, estou aqui!  Amiga, estou aqui!  Se a fase é ruim  E são tantos problemas que não tem fim  Não se esqueça que ouviu de mim  Amiga, estou aqui!  Amiga, estou aqui!",
         upvotes: 10,
         downvotes: 5,
@@ -106,28 +106,28 @@ const commentsWithCreatorNicknameMock: CommentDBWithCreatorNickname[] = [
 
 const commentVoteMock: CommentVoteDB[] = [
     {
-        user_id: "u001",
-        comment_id: "c001",
+        user_id: "id-mock-lau",
+        comment_id: "id-mock-c1",
         vote: true
     }, {
-        user_id: "u002",
-        comment_id: "c003",
+        user_id: "id-mock-yuzo",
+        comment_id: "id-mock-c3",
         vote: true
     }, {
-        user_id: "u007",
-        comment_id: "c002",
+        user_id: "id-mock-jessica",
+        comment_id: "id-mock-c2",
         vote: false
     }, {
-        user_id: "u006",
-        comment_id: "c005",
+        user_id: "id-mock-luiz",
+        comment_id: "id-mock-c5",
         vote: false
     }, {
-        user_id: "u004",
-        comment_id: "c003",
+        user_id: "id-mock-gabi",
+        comment_id: "id-mock-c3",
         vote: true
     }, {
-        user_id: "u005",
-        comment_id: "c004",
+        user_id: "id-mock-clara",
+        comment_id: "id-mock-c4",
         vote: false
     }   // 0 = false = downvote
 ]       // 1 = true = upvote
